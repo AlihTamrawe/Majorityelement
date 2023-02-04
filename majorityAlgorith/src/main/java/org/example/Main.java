@@ -49,16 +49,18 @@ public class Main {
         }
         int max=0;
         int maxKey=0;
+
         for(int key:ayOfNums.keySet() ){
         	if(ayOfNums.get(key)>numsArr.length/2)
             if(max<ayOfNums.get(key) ) {
                 max=ayOfNums.get(key);
                 maxKey=key;}
-            System.out.println("  element is: " +key);
+            System.out.println("  element is: " +key);//print the element bigger major item than half of length
 
             
                 
         }
+         
 
         System.out.println("Majority element is: " + maxKey+"times :"+max+"  :"+count);
         return candidate;
